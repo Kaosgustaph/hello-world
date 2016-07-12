@@ -1,6 +1,3 @@
-# hello-world
-Para el curso de la UNAM
-activity_main.xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,28 +14,27 @@ activity_main.xml
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/marcianito"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/titulo_app"
         android:id="@+id/textView"
-        android:textSize="@dimen/abc_text_size_title_material"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:layout_marginTop="112dp" />
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/boton"
         android:id="@+id/button"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:text="@string/boton" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
